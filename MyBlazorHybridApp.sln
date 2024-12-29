@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlazorHybridApp.MAUI", "MyBlazorHybridApp.MAUI\MyBlazorHybridApp.MAUI.csproj", "{8588CA02-C9B2-4A56-B06C-96D463BF5F78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlazorHybridApp.Web", "MyBlazorHybridApp.Web\MyBlazorHybridApp.Web.csproj", "{174647F9-CF23-49A1-84D6-390380D1678B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlazorHybridApp", "MyBlazorHybridApp\MyBlazorHybridApp.csproj", "{8C5ED379-DAA2-4622-A509-403540FAB297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlazorHybridApp.Server", "MyBlazorHybridApp.Server\MyBlazorHybridApp.Server.csproj", "{D54B8590-8C7F-4DB9-AAED-E70A4759C54E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8588CA02-C9B2-4A56-B06C-96D463BF5F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8588CA02-C9B2-4A56-B06C-96D463BF5F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8588CA02-C9B2-4A56-B06C-96D463BF5F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8588CA02-C9B2-4A56-B06C-96D463BF5F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174647F9-CF23-49A1-84D6-390380D1678B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174647F9-CF23-49A1-84D6-390380D1678B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174647F9-CF23-49A1-84D6-390380D1678B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174647F9-CF23-49A1-84D6-390380D1678B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5ED379-DAA2-4622-A509-403540FAB297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5ED379-DAA2-4622-A509-403540FAB297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5ED379-DAA2-4622-A509-403540FAB297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5ED379-DAA2-4622-A509-403540FAB297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54B8590-8C7F-4DB9-AAED-E70A4759C54E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54B8590-8C7F-4DB9-AAED-E70A4759C54E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54B8590-8C7F-4DB9-AAED-E70A4759C54E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54B8590-8C7F-4DB9-AAED-E70A4759C54E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
