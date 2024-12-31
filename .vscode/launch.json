@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MAUI:Debug",
+            "type": "maui",
+            "request": "launch",
+            "preLaunchTask": "MAUI"
+        },
+        {
+            "name": "Blazor:debug",
+            "type": "blazorwasm",
+            "request": "launch",
+            "url": "http://localhost:${config:BLAZOR_PORT}",
+            "browser": "chrome",
+            "timeout": 60000
+        }
+    ]
+}

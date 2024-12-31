@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "MAUI",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/${config:MAUI_PROJECT_NAME}",
+                "--framework",
+                "${config:MAUI_FRAMEWORK}"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Blazor:watch",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "watch",
+                "--launch-profile",
+                "${config:BLAZOR_PROFILE}",
+                "--project",
+                "${workspaceFolder}/${config:BLAZOR_PROJECT_NAME}",
+                "--verbose"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "isBackground": true
+        },
+        {
+            "label": "Kill Background Tasks",
+            "type": "shell",
+            "command": "taskkill",
+            "args": [
+                "/F",
+                "/IM",
+                "dotnet.exe"
+            ]
+        },
+        {
+            "label": "Clean and Restore Cache",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "dotnet restore; dotnet clean; dotnet nuget locals all --clear"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
