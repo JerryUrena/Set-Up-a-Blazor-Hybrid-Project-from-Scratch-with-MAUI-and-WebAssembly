@@ -21,6 +21,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
+		//Services
+		builder.Services.MyBlazorHybridAppClient();
+
 		return builder.Build();
 	}
 }
