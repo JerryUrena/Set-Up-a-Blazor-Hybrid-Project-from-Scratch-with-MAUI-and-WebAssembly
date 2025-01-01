@@ -1,0 +1,11 @@
+﻿<Router AppAssembly="@typeof(MyApp).Assembly">
+    <Found Context="routeData">
+        <AuthRouteView 
+            RouteData="@routeData"
+            MyAppComponent="this"/>
+    </Found>
+
+    <NotFound>
+        <NotFoundView />
+    </NotFound>
+</Router>

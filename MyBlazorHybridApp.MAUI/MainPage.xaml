@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MyBlazorHybridApp.MAUI"
-             x:Class="MyBlazorHybridApp.MAUI.MainPage">
+             x:Class="MyBlazorHybridApp.MAUI.MainPage"
+             xmlns:myapp="clr-namespace:MyBlazorHybridApp;assembly=MyBlazorHybridApp">
 
     <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
         <BlazorWebView.RootComponents>
-            <RootComponent Selector="#app" ComponentType="{x:Type local:Components.Routes}" />
+            <RootComponent Selector="#app" ComponentType="{x:Type myapp:MyApp}" />
         </BlazorWebView.RootComponents>
     </BlazorWebView>
 
