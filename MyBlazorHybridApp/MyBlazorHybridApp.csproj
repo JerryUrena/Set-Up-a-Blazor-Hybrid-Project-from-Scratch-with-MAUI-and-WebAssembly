@@ -15,4 +15,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" />
   </ItemGroup>
 
+    <Target Name="NpmBuild" AfterTargets="Compile">
+      <Exec Command="npm install" WorkingDirectory="npm" />
+      <Exec Command="npm run build-dev" WorkingDirectory="npm" Condition="'$(Configuration)' == 'Debug'" />
+      <Exec Command="npm run build" WorkingDirectory="npm" Condition="'$(Configuration)' == 'Release'" />
+  </Target>
+
 </Project>
