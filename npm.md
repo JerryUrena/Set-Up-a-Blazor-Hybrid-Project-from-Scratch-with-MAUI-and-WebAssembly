@@ -1,5 +1,5 @@
 
-# How to Add NPM to Your Blazor App
+# How to Add NPM to Your Blazor Hybrid App
 
 ## Overview
 The sky is the limit! The idea is to have everything available. Since Blazor is relatively new, there aren’t many packages, but don’t worry. I will show you how to include NPM packages with your Blazor Hybrid app and make everything bulletproof by adding TypeScript. Since Microsoft does not natively support `.ts` or `.js` files, we’ll include that support. Microsoft will be jealous! 😄
