@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const autoprefixer = require('autoprefixer');
 
 function findFiles(dir, extensions, fileList = []) {
     const files = fs.readdirSync(dir);
@@ -57,6 +58,34 @@ module.exports = (env, argv) => {
                         },
                     },
                     exclude: /node_modules/,
+                },
+                {
+                    test: /\.css$/,
+                    use: ['style-loader', 'css-loader']
+                },
+                {
+                    test: /\.(scss)$/,
+                    use: [
+                        {
+                            loader: 'style-loader'
+                        },
+                        {
+                            loader: 'css-loader'
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                postcssOptions: {
+                                    plugins: [
+                                        autoprefixer
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            loader: 'sass-loader'
+                        }
+                    ]
                 }
             ]
         },

@@ -1,0 +1,18 @@
+// Custom color variables
+$primary: #3498db;
+$secondary: #2ecc71;
+$danger: #e74c3c;
+$info: #8e44ad;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "info": $info,
+    "danger": $danger,
+    "my-custom-color": #f1c40f,
+    //Add other colors here
+);
+
+$enable-subtle-buttons: true;
+
+@import "~bootstrap/scss/bootstrap";
